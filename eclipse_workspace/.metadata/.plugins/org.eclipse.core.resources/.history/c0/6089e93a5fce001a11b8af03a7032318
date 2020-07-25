@@ -1,0 +1,127 @@
+// This is a demonstration on how to use an input device to trigger changes on your neo pixels.
+// You should wire a momentary push button to connect from ground to a digital IO pin.  When you
+// press the button it will change to a new pixel animation.  Note that you need to press the
+// button once to start the first animation!
+
+#include <Adafruit_NeoPixel.h>
+
+#include "TeslaSchild.h"
+
+// Parameter 1 = number of pixels in strip,  neopixel stick has 8
+// Parameter 2 = pin number (most are valid)
+// Parameter 3 = pixel type flags, add together as needed:
+//   NEO_RGB     Pixels are wired for RGB bitstream
+//   NEO_GRB     Pixels are wired for GRB bitstream, correct for neopixel stick
+//   NEO_KHZ400  400 KHz bitstream (e.g. FLORA pixels)
+//   NEO_KHZ800  800 KHz bitstream (e.g. High Density LED strip), correct for neopixel stick
+
+// 18 LEDs bei 144 Streifen
+//  8 LEDs bei 60 Steifen
+//
+
+#define LED_COUNT  8
+
+Adafruit_NeoPixel stripD2 = Adafruit_NeoPixel(LED_COUNT, 2, NEO_GRB + NEO_KHZ800);
+TeslaSchild d2(stripD2);
+
+Adafruit_NeoPixel stripD3 = Adafruit_NeoPixel(LED_COUNT, 3, NEO_GRB + NEO_KHZ800);
+TeslaSchild d3(stripD3);
+
+Adafruit_NeoPixel stripD4 = Adafruit_NeoPixel(LED_COUNT, 4, NEO_GRB + NEO_KHZ800);
+TeslaSchild d4(stripD4);
+
+Adafruit_NeoPixel stripD5 = Adafruit_NeoPixel(LED_COUNT, 5, NEO_GRB + NEO_KHZ800);
+TeslaSchild d5(stripD5);
+
+Adafruit_NeoPixel stripD6 = Adafruit_NeoPixel(LED_COUNT, 6, NEO_GRB + NEO_KHZ800);
+TeslaSchild d6(stripD6);
+
+Adafruit_NeoPixel stripD7 = Adafruit_NeoPixel(LED_COUNT, 7, NEO_GRB + NEO_KHZ800);
+TeslaSchild d7(stripD7);
+
+Adafruit_NeoPixel stripD8 = Adafruit_NeoPixel(LED_COUNT, 8, NEO_GRB + NEO_KHZ800);
+TeslaSchild d8(stripD8);
+
+Adafruit_NeoPixel stripD9 = Adafruit_NeoPixel(LED_COUNT, 9, NEO_GRB + NEO_KHZ800);
+TeslaSchild d9(stripD9);
+
+Adafruit_NeoPixel stripD12 = Adafruit_NeoPixel(LED_COUNT, 12, NEO_GRB + NEO_KHZ800);
+TeslaSchild d12(stripD12);
+
+int millies = 0;
+int deltaMillies = 25;
+int donutMode = 0;
+
+void setup() {
+
+	millies = 0;
+
+	d2.setup();
+	d3.setup();
+	d4.setup();
+	d5.setup();
+	d6.setup();
+	d7.setup();
+	d8.setup();
+	d9.setup();
+	d12.setup();
+
+}
+
+void loop() {
+	millies = millies + deltaMillies;
+
+	if (millies >= 5000)
+		millies = 0;
+
+	if (millies == 0) {
+		donutMode++;
+		if (donutMode == 8)
+			donutMode = 0;
+	}
+
+	drawTeslaSchild();
+	delay(deltaMillies);
+
+}
+
+void drawTeslaSchild() {
+
+	switch (donutMode) {
+	default:
+	case 0:
+		d12.drawWheelAllColors(millies);
+		break;
+	case 1:
+		d12.drawLauflichtRandomColor(millies);
+		break;
+	case 2:
+		d12.drawRandomSegmentUSA(millies, 100);
+		break;
+	case 3:
+		d12.drawBarGraphWheeled(millies);
+		break;
+	case 4:
+		d12.drawDoubleLauflichtWheeled(millies);
+		break;
+	case 5:
+		d12.drawWheelColorful(6);
+		break;
+	case 6:
+		d12.drawRandomSegment(millies, 100);
+		break;
+	case 7:
+		d12.drawBarGraphWheeledColorfull(millies);
+		break;
+	}
+
+	d2.drawWheelAllColors(millies);
+	d3.drawLauflichtRandomColor(millies);
+	d4.drawRandomSegmentUSA(millies, 100);
+	d5.drawBarGraphWheeled(millies);
+	d6.drawDoubleLauflichtWheeled(millies);
+	d7.drawWheelColorful(millies);
+	d8.drawBarGraphWheeledColorfull(millies);
+	d9.drawRandomSegment(millies, 100);
+}
+

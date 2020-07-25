@@ -1,0 +1,257 @@
+!SESSION 2020-07-25 12:07:28.346 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -perspective it.baeyens.arduino.application.perspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective it.baeyens.arduino.application.perspective
+
+!ENTRY it.baeyens.arduino.common 4 0 2020-07-25 12:07:42.140
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.common [435]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.common"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-07-25 12:07:42.148
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.core [437]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.core"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.monitor 4 0 2020-07-25 12:07:42.153
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.monitor [438]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.monitor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.cdt.refactor 4 0 2020-07-25 12:07:42.159
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.cdt.refactor [439]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.cdt.refactor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-25 12:08:22.809
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\User'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2020-07-25 12:08:24.427
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2020-07-25 12:08:24.442
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-25 12:08:54.746
+!MESSAGE Indexed 'DonutHeaven' (29 sources, 82 headers) in 1,88 sec: 3.521 declarations; 8.451 references; 3 unresolved inclusions; 0 syntax errors; 304 unresolved names (2,5 %)
+
+!ENTRY org.eclipse.core.resources 4 1 2020-07-25 12:09:04.268
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: C:\dataP\ws_git\tesla_neopixel\eclipse_workspace\TeslaSchild\.project.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:371)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:639)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1366)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1347)
+	at org.eclipse.core.internal.resources.Workspace.copyTree(Workspace.java:1083)
+	at org.eclipse.core.internal.resources.Workspace.copyTree(Workspace.java:1119)
+	at org.eclipse.core.internal.resources.Workspace.copyTree(Workspace.java:1119)
+	at org.eclipse.core.internal.resources.Workspace.move(Workspace.java:2024)
+	at org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(ResourceTree.java:679)
+	at org.eclipse.core.internal.resources.ResourceTree.standardMoveProject(ResourceTree.java:1055)
+	at org.eclipse.core.internal.resources.Resource.unprotectedMove(Resource.java:1872)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1530)
+	at org.eclipse.ltk.core.refactoring.resource.RenameResourceChange.perform(RenameResourceChange.java:123)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: java.io.FileNotFoundException: C:\dataP\ws_git\tesla_neopixel\eclipse_workspace\TeslaSchild\.project (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 24 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2020-07-25 12:09:04.269
+!MESSAGE File not found: C:\dataP\ws_git\tesla_neopixel\eclipse_workspace\TeslaSchild\.project.
+!STACK 0
+java.io.FileNotFoundException: C:\dataP\ws_git\tesla_neopixel\eclipse_workspace\TeslaSchild\.project (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:371)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:639)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1366)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1347)
+	at org.eclipse.core.internal.resources.Workspace.copyTree(Workspace.java:1083)
+	at org.eclipse.core.internal.resources.Workspace.copyTree(Workspace.java:1119)
+	at org.eclipse.core.internal.resources.Workspace.copyTree(Workspace.java:1119)
+	at org.eclipse.core.internal.resources.Workspace.move(Workspace.java:2024)
+	at org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(ResourceTree.java:679)
+	at org.eclipse.core.internal.resources.ResourceTree.standardMoveProject(ResourceTree.java:1055)
+	at org.eclipse.core.internal.resources.Resource.unprotectedMove(Resource.java:1872)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1530)
+	at org.eclipse.ltk.core.refactoring.resource.RenameResourceChange.perform(RenameResourceChange.java:123)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY it.baeyens.cdt.refactor 1 0 2020-07-25 12:09:04.356
+!MESSAGE changed path from /DonutHeaven to /TeslaSchild
+
+!ENTRY it.baeyens.cdt.refactor 1 0 2020-07-25 12:09:04.371
+!MESSAGE changed path from /DonutHeaven to /TeslaSchild
+
+!ENTRY it.baeyens.cdt.refactor 1 0 2020-07-25 12:09:04.371
+!MESSAGE changed path from /DonutHeaven to /TeslaSchild
+
+!ENTRY it.baeyens.cdt.refactor 1 0 2020-07-25 12:09:04.387
+!MESSAGE changed path from /DonutHeaven to /TeslaSchild
+
+!ENTRY it.baeyens.cdt.refactor 1 0 2020-07-25 12:09:04.387
+!MESSAGE changed path from /DonutHeaven to /TeslaSchild
+
+!ENTRY it.baeyens.cdt.refactor 1 0 2020-07-25 12:09:04.387
+!MESSAGE changed path from /DonutHeaven to /TeslaSchild
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-25 12:09:05.074
+!MESSAGE Indexed 'TeslaSchild' (29 sources, 28 headers) in 0,406 sec: 1.762 declarations; 3.050 references; 67 unresolved inclusions; 23 syntax errors; 1.073 unresolved names (18 %)
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-07-25 12:09:15.243
+!MESSAGE No project found to build
+
+!ENTRY it.baeyens.arduino.core 1 0 2020-07-25 12:25:43.682
+!MESSAGE The folder C:\Users\User\Arduino\hardware' does not contain any files.
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-07-25 12:26:29.121
+!MESSAGE Serial port COM5 already in use. Try quiting any programs that may be using it
+!STACK 0
+jssc.SerialPortException: Port name - COM5; Method name - openPort(); Exception type - Port busy.
+	at jssc.SerialPort.openPort(SerialPort.java:164)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:177)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:168)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:134)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:114)
+	at it.baeyens.arduino.communication.ArduinoSerial.makeArduinoUploadready(ArduinoSerial.java:230)
+	at it.baeyens.arduino.tools.uploaders.arduinoUploader.uploadUsingPreferences(arduinoUploader.java:54)
+	at it.baeyens.arduino.tools.uploaders.UploadSketchWrapper$UploadJobWrapper.run(UploadSketchWrapper.java:164)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY it.baeyens.arduino.core 2 0 2020-07-25 12:26:29.137
+!MESSAGE Unable to open Serial port COM5
+
+!ENTRY it.baeyens.arduino.core 1 0 2020-07-25 12:26:35.716
+!MESSAGE The folder C:\Users\User\Arduino\hardware' does not contain any files.
+
+!ENTRY it.baeyens.arduino.core 1 0 2020-07-25 12:26:52.863
+!MESSAGE The folder C:\Users\User\Arduino\hardware' does not contain any files.
+
+!ENTRY it.baeyens.arduino.core 1 0 2020-07-25 12:27:25.174
+!MESSAGE The folder C:\Users\User\Arduino\hardware' does not contain any files.
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-07-25 12:28:35.284
+!MESSAGE Serial port COM5 already in use. Try quiting any programs that may be using it
+!STACK 0
+jssc.SerialPortException: Port name - COM5; Method name - openPort(); Exception type - Port busy.
+	at jssc.SerialPort.openPort(SerialPort.java:164)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:177)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:168)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:134)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:114)
+	at it.baeyens.arduino.communication.ArduinoSerial.makeArduinoUploadready(ArduinoSerial.java:230)
+	at it.baeyens.arduino.tools.uploaders.arduinoUploader.uploadUsingPreferences(arduinoUploader.java:54)
+	at it.baeyens.arduino.tools.uploaders.UploadSketchWrapper$UploadJobWrapper.run(UploadSketchWrapper.java:164)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY it.baeyens.arduino.core 2 0 2020-07-25 12:28:35.300
+!MESSAGE Unable to open Serial port COM5
+
+!ENTRY it.baeyens.arduino.core 1 0 2020-07-25 12:28:57.126
+!MESSAGE The folder C:\Users\User\Arduino\hardware' does not contain any files.
